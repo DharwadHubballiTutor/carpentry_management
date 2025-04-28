@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid" style="font-family: 'Arial', sans-serif; background-color: #f9f9f9; padding: 20px;">
+    <h1 style="color: #2c3e50; text-align: center; margin-top: 20px; font-size: 36px;"></h1>
+        Welcome to Carpentry Management System
+    </h1>
+    <p style="color: #34495e; text-align: center; font-size: 18px; margin-bottom: 30px;">
+        Designed with ❤️ using lovable.ai
+    </p>
+    <p style="color: #2c3e50; text-align: center; font-size: 16px; margin-bottom: 40px;">
+        Manage your carpentry projects, customers, and inventory efficiently.
+    </p>
+    
+    <div class="features" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;">
+        <div class="feature" style="background-color: #ecf0f1; border-radius: 10px; padding: 20px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <h2 style="color: #2980b9; font-size: 24px;">🛠️ Projects</h2>
+            <p style="color: #2c3e50; font-size: 16px;">Track ongoing and completed carpentry projects.</p>
+        </div>
+        <div class="feature" style="background-color: #ecf0f1; border-radius: 10px; padding: 20px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <h2 style="color: #27ae60; font-size: 24px;">📋 Orders</h2>
+            <p style="color: #2c3e50; font-size: 16px;">Manage customer orders and invoices.</p>
+        </div>
+        <div class="feature" style="background-color: #ecf0f1; border-radius: 10px; padding: 20px; width: 300px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: center;">
+            <h2 style="color: #e67e22; font-size: 24px;">📦 Inventory</h2>
+            <p style="color: #2c3e50; font-size: 16px;">Keep track of raw materials and finished products.</p>
+        </div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px;">
+        <a href="{% url 'admin:index' %}" class="btn" style="background-color: #3498db; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            Admin Dashboard
+        </a>
+    </div>
+</div>
+{% endblock %}
